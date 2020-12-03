@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Drop-Down</title>
+    <!-- bootstraps -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        select,option{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h2>Dynamic Dropdown</h2>
+        <h6>Select your world</h6>
+        <select id="parentDiv" onchange="getSelectValue();">
+            <option value="btc">Btc</option>
+            <option value="eth">Eth</ption>
+            <option value="ltc">Ltc</option>
+        </select>
+        <select id="contentDiv" onchange="getSelectValue2()">
+        </select>
+        <select id="contentDiv2">
+        </select>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
